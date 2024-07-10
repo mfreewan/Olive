@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/assets/fonts/NunitoSans.ttf') format('ttf'),
+        url('/assets/fonts/NunitoSans1.ttf') format('ttf');
+    /* Add other font weights and styles if needed */
+    font-weight: normal;
+    font-style: normal;
+}

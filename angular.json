@@ -28,10 +28,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets/fonts",
+                "output": "src/assets/fonts"
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -96,6 +98,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +106,18 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1b62bc4c-48be-4317-a5c6-75c90e8e58e2"
   }
+,
+"assets": [
+  "src/favicon.ico",
+  "src/assets",
+  {
+    "glob": "**/*",
+    "input": "src/assets/fonts",
+    "output": "/assets/fonts"
+  }
+]
 }

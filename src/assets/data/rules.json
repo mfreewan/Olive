@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "name": "Leave Types",
+        "module": "Leaves",
+        "country_name":"United States",
+        "country": "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "name": "Leave Types",
+        "module": "Leaves",
+        "country_name":"Jordan",
+        "country": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+        "status": "Draft"
+    },
+    {
+        "id": 3,
+        "name": "Leave Types",
+        "module": "Leaves",
+        "country_name":"Sweden",
+        "country": "https://cdn11.bigcommerce.com/s-2lbnjvmw4d/images/stencil/original/products/3176/5206/swedenflag__41343.1614611548.jpg",
+        "status": "Draft"
+    },
+    {
+        "id": 4,
+        "name": "Scheduling",
+        "module": "Leaves",
+        "country_name":"Jordan",
+        "country": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+        "status": "Ready"
+    },
+    {
+        "id": 5,
+        "name": "Scheduling",
+        "module": "Leaves",
+        "country_name":"KSA",
+        "country": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXMZXM1pLYC1ERkj6BYKEqZoXQ_pWFq_1tQ&s",
+        "status": "Inactive"
+    },
+    {
+        "id": 6,
+        "name": "Time tracking",
+        "module": "Attendance",
+        "country_name":"KSA",
+        "country": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXMZXM1pLYC1ERkj6BYKEqZoXQ_pWFq_1tQ&s",
+        "status": "Inactive"
+    },
+    {
+        "id": 7,
+        "name": "Leave Types",
+        "module": "Leaves",
+        "country_name":"Sweden",
+        "country": "https://cdn11.bigcommerce.com/s-2lbnjvmw4d/images/stencil/original/products/3176/5206/swedenflag__41343.1614611548.jpg",
+        "status": "Draft"
+    },
+    {
+        "id": 8,
+        "name": "Scheduling",
+        "module": "Leaves",
+        "country_name":"Jordan",
+        "country": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+        "status": "Ready"
+    } , {
+        "id": 9,
+        "name": "Leave Types",
+        "module": "Leaves",
+        "country_name":"Sweden",
+        "country": "https://cdn11.bigcommerce.com/s-2lbnjvmw4d/images/stencil/original/products/3176/5206/swedenflag__41343.1614611548.jpg",
+        "status": "Draft"
+    },
+    {
+        "id": 10,
+        "name": "Scheduling",
+        "module": "Leaves",
+        "country_name":"Jordan",
+        "country": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+        "status": "Ready"
+    }
+]
