@@ -1,0 +1,40 @@
+.sidebar {
+  position: relative;
+
+}
+
+.side-list {
+  margin-top: 35px;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 7px 40px;
+  list-style-type: none;
+}
+
+.sidebar li:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.sidebar li.active {
+  background: #d9d9d9;
+  color: #070202;
+}
+
+.sidebar li.active span {
+  font-weight: 900;
+}
+
+.text {
+  font-family: var(--font-family-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: left;
+}

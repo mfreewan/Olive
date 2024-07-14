@@ -1,0 +1,37 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+app-sidebar {
+  background-color: var(--background);
+  height: 100%;
+  width:259px;
+  z-index: 2;
+}
+
+.main-content {
+  flex: 1;
+  padding: 16px;
+  background-color: #fff;
+}
+
+app-header {
+  background-color: #f5f5f5;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}

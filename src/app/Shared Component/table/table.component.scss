@@ -1,17 +1,18 @@
+.table-container {
+  font-family: var(--font-family-main);
+  position: relative;
+  margin: 60px 25px 0px 25px;
+}
 .sideLabel {
   margin-right: auto;
-  font-family: 'Times New Roman';
   font-size: 26px;
   font-weight: 700;
   line-height: 35.46px;
   text-align: left;
-  font-family: "Nunito Sans", sans-serif;}
+  display: flex;
+  margin-bottom: 15px;
 
-.table-container {
-  position: relative;
-  margin: 2rem 2rem;
 }
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -26,7 +27,7 @@ td {
 }
 
 th {
-  background-color: #f4f4f4;
+  background: #e8e8e8;
   padding: 17px;
 }
 
@@ -40,7 +41,6 @@ td {
 }
 
 .actions button {
-  background-color: #007bff;
   border: none;
   color: white;
   padding: 8px;
@@ -56,60 +56,56 @@ td img {
 
 .pagination {
   display: flex;
-justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .pagination button {
   border: none;
   color: rgb(72, 60, 60);
   background: none;
-  font-size: 1rem;
+  font-size: 16px;
+  cursor: pointer; // added to more styling
 }
-
-
 
 .page-number button {
   color: #747474;
-
+  cursor: pointer; // added to more styling
   border-radius: 20px;
-
 }
 
 .page-number button.active {
   background: rgba(64, 64, 64, 1);
   border-radius: 20px;
-  color: #FDFDF5;
+  color: #fdfdf5;
 }
 
 .left-side {
   color: #747474;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-.item-per-page-option{
-  background: #E8E8E8;
-  border-radius: 7rem;
-  width:3rem;
+.item-per-page-option {
+  background: #e8e8e8;
+  border-radius: 8px;
+  width: 3rem;
   appearance: none;
-  padding-left: 0.2rem;
-
+  padding-left: 2px;
 }
 
-.add-new-button {
+.create-new-button {
+  font-family: var(--font-family-main);
   margin-left: auto;
-  display: flex;
   border: 1px solid #ccc;
-  margin-bottom: 1rem;
-  background: rgba(141, 141, 141, 1);
-  color: rgba(255, 255, 255, 1);
+  background: #8d8d8d;
+  color: #ffffff;
   width: 232px;
   height: 51px;
   padding: 12px 49px 15px 49px;
   border-radius: 8px;
-  font-family: "Nunito Sans", sans-serif;  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-
+  cursor: pointer; // added to more styling
 }
 
 .search-container {
@@ -117,9 +113,9 @@ justify-content: space-between;
   width: 36%;
   display: flex;
   border: 1px solid #ccc;
-  border-radius: 7px;
+  border-radius: 8px;
   padding: 6px;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
 }
 
 .search-input {
@@ -129,7 +125,10 @@ justify-content: space-between;
 }
 
 .search-button {
+  font-family: var(--font-family-main);
+  color: #8d8d8d;
   background: none;
   border: none;
   padding: 5px;
+  cursor: pointer; // added to more styling
 }

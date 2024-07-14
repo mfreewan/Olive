@@ -6,28 +6,38 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 
-
-
-
 @Component({
   selector: 'app-table',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatMenuModule, MatIconModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss']
+  styleUrls: ['./table.component.scss'],
 })
 export class TableComponent {
   @Input() headers: string[] = [];
-  @Input() data: any[] = [];
+  @Input() tableData: any[] = []; // updated name from data to tableData
   @Input() showAddNewButton = false;
   @Input() name: string = '';
+  @Input() searchWord: string = '';
   itemsPerPage = 6;
   currentPage = 1;
 
   constructor(private router: Router) {}
 
   get rowKeys() {
-    return this.data.length > 0 ? Object.keys(this.data[0]).filter(key => key !== 'id') : [];
+    return this.tableData.length > 0
+      ? Object.keys(this.tableData[0]).filter((key) => key !== 'id')
+      : [];
+  }
+
+  search() {
+    console.log(this.searchWord);
   }
 
   editRow(id: any) {
@@ -41,7 +51,10 @@ export class TableComponent {
   }
 
   get paginationText() {
-    return `${(this.currentPage - 1) * this.itemsPerPage + 1} - ${Math.min(this.currentPage * this.itemsPerPage, this.data.length)} Out of ${this.data.length}`;
+    return `${(this.currentPage - 1) * this.itemsPerPage + 1} - ${Math.min(
+      this.currentPage * this.itemsPerPage,
+      this.tableData.length
+    )} Out of ${this.tableData.length}`;
   }
 
   previousPage() {
@@ -51,7 +64,7 @@ export class TableComponent {
   }
 
   nextPage() {
-    if (this.currentPage * this.itemsPerPage < this.data.length) {
+    if (this.currentPage * this.itemsPerPage < this.tableData.length) {
       this.currentPage++;
     }
   }
@@ -61,7 +74,7 @@ export class TableComponent {
   }
 
   lastPage() {
-    this.currentPage = Math.ceil(this.data.length / this.itemsPerPage);
+    this.currentPage = Math.ceil(this.tableData.length / this.itemsPerPage);
   }
 
   setPage(page: number) {
@@ -69,10 +82,10 @@ export class TableComponent {
   }
 
   get totalPages() {
-    return Math.ceil(this.data.length / this.itemsPerPage);
+    return Math.ceil(this.tableData.length / this.itemsPerPage);
   }
 
   isImageUrl(value: string): boolean {
-    return value.startsWith('') ;
+    return value.startsWith('');
   }
 }
