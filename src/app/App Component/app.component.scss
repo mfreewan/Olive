@@ -3,12 +3,18 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-}
+  background: rgba(247, 247, 247, 1);
 
+}
+html{
+  background: rgba(247, 247, 247, 1);
+
+}
 .main {
   display: flex;
   flex-direction: column;
   height: 100%;
+
 }
 
 .content-container {
@@ -35,3 +41,4 @@ app-header {
   position: relative;
   z-index: 1;
 }
+

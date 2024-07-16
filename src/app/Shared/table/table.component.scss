@@ -1,0 +1,210 @@
+.table-container {
+  font-family: var(--font-family-main);
+  position: relative;
+  margin: 60px 25px 0px 25px;
+}
+
+.sideLabel {
+  margin-right: auto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.46px;
+  text-align: left;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+table {
+  border: 3px solid #f4f4f4;
+  border-radius: 10px !important;
+  border-collapse: separate; /* Make sure border-collapse is set to separate */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  padding: 17px;
+  border-bottom: none;
+}
+
+th:first-child {
+  border-top-left-radius: 7px; /* Add border-radius to the first header cell */
+}
+
+th:last-child {
+  border-top-right-radius: 7px; /* Add border-radius to the last header cell */
+}
+
+td {
+  border-bottom: 1.5px solid #ddd;
+}
+
+td img {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination button {
+  border: none;
+  color: rgb(72, 60, 60);
+  background: none;
+  font-size: 16px;
+  cursor: pointer; // added to more styling
+}
+
+.create-new-button {
+  font-family: var(--font-family-main);
+  margin-left: auto;
+  border: 1px solid #ccc;
+  background: #8d8d8d;
+  color: #ffffff;
+  width: 232px;
+  height: 51px;
+  padding: 12px 49px 15px 49px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; // added to more styling
+}
+
+.search-container {
+  margin-left: auto;
+  width: 36%;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
+.search-input {
+  border: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.search-button {
+  font-family: var(--font-family-main);
+  color: #8d8d8d;
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer; // added to more styling
+}
+
+.pagination-container {
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.mat-mdc-paginator-page-size {
+  display: none;
+  align-items: baseline;
+  margin-right: 8px;
+}
+
+::ng-deep .mat-mdc-paginator-container {
+  justify-content: space-between !important;
+  padding: 0 !important;
+}
+
+::ng-deep .mat-mdc-paginator-range-label {
+  margin-right: 0 !important;
+  position: relative;
+  right: 1145px;
+}
+
+::ng-deep .mat-mdc-paginator-page-size {
+  align-items: center !important;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+
+.mat-mdc-table .mat-mdc-header-cell {
+  background: #e8e8e8;
+}
+
+.mat-mdc-paginator {
+  color: #747474;
+}
+
+
+::ng-deep .mdc-notched-outline__trailing {
+  border:none !important;
+}
+
+::ng-deep .mdc-notched-outline__leading{
+  border: none !important;
+}
+
+::ng-deep .mat-mdc-select-trigger{
+  border-radius: 8px;
+  width: 64px !important;
+  height:21px !important;
+  background-color: #e8e8e8;
+  padding-left: 3px;
+  appearance: none !important;
+}
+
+.custom-paginator{
+  background-color: inherit;
+
+}
+
+
+
+// /* Hide the default icon for the first page button */
+// .mat-mdc-paginator-navigation-first .mat-mdc-paginator-icon {
+//   display: none;
+// }
+
+// /* Add custom icon for the first page button */
+// .mat-mdc-paginator-navigation-first {
+//   position: relative;
+// }
+
+// .mat-mdc-paginator-navigation-first::before {
+//   content: url('/src/assets/Icons/search-icon.svg'); /* Path to your custom icon */
+//   display: inline-block;
+//   width: 24px; /* Adjust the size as needed */
+//   height: 24px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// /* Hide the default icon for the last page button */
+// .mat-mdc-paginator-navigation-last .mat-mdc-paginator-icon {
+//   display: none;
+// }
+
+// /* Add custom icon for the last page button */
+// .mat-mdc-paginator-navigation-last {
+//   position: relative;
+// }
+
+// .mat-mdc-paginator-navigation-last::before {
+//   content: url('/src/assets/Icons/search-icon.svg'); /* Path to your custom icon */
+//   display: inline-block;
+//   width: 24px; /* Adjust the size as needed */
+//   height: 24px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+
