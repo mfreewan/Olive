@@ -29,10 +29,10 @@ describe('RulesComponent', () => {
   it('should initialize with rule data', () => {
     const mappedData = rulesData.map(item => ({
       id: item.id,
-      name: item.name,
-      module: item.module,
+      Name: item.name,
+      Module: item.module,
       country: item.country,
-      status: item.status,
+      Status: item.status,
     }));
 
     component.ruleData = new MatTableDataSource(mappedData);

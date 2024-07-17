@@ -118,11 +118,9 @@ td img {
   padding: 0 !important;
 }
 
-::ng-deep .mat-mdc-paginator-range-label {
-  margin-right: 0 !important;
-  position: relative;
-  right: 1145px;
-}
+// ::ng-deep .mat-mdc-paginator-range-label {
+//   margin-right: 425px !important;
+// }
 
 ::ng-deep .mat-mdc-paginator-page-size {
   align-items: center !important;
@@ -163,48 +161,10 @@ td img {
 
 }
 
+::ng-deep .mat-mdc-select-arrow{
+  display: none;
+}
 
 
-// /* Hide the default icon for the first page button */
-// .mat-mdc-paginator-navigation-first .mat-mdc-paginator-icon {
-//   display: none;
-// }
-
-// /* Add custom icon for the first page button */
-// .mat-mdc-paginator-navigation-first {
-//   position: relative;
-// }
-
-// .mat-mdc-paginator-navigation-first::before {
-//   content: url('/src/assets/Icons/search-icon.svg'); /* Path to your custom icon */
-//   display: inline-block;
-//   width: 24px; /* Adjust the size as needed */
-//   height: 24px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
-// /* Hide the default icon for the last page button */
-// .mat-mdc-paginator-navigation-last .mat-mdc-paginator-icon {
-//   display: none;
-// }
-
-// /* Add custom icon for the last page button */
-// .mat-mdc-paginator-navigation-last {
-//   position: relative;
-// }
-
-// .mat-mdc-paginator-navigation-last::before {
-//   content: url('/src/assets/Icons/search-icon.svg'); /* Path to your custom icon */
-//   display: inline-block;
-//   width: 24px; /* Adjust the size as needed */
-//   height: 24px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
 
 
