@@ -5,9 +5,8 @@ describe('HeaderComponent', () => {
   let component: SidebarComponent;
   let fixture: ComponentFixture<SidebarComponent>;
 
-
   beforeEach(() => {
-    component = new SidebarComponent(); 
+    component = new SidebarComponent();
   });
 
   it('should create the component', () => {

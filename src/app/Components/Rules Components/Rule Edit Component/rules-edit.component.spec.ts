@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { RuleEditComponent } from './rules-edit.component';
-import ruleDetails from '../../../assets/Rules Data/ruleDetails.json';
-import rulesData from '../../../assets/Rules Data/rules.json';
+import ruleDetails from '../../../../assets/Rules Data/ruleDetails.json';
+import rulesData from '../../../../assets/Rules Data/rules.json';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 class MockActivatedRoute {

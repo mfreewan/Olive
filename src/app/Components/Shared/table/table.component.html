@@ -2,7 +2,11 @@
   <header class="sideLabel">
     <label>Rules Engine</label>
     <span *ngIf="name" class="name-label"> > Leave Type - {{ name }}</span>
-    <button *ngIf="showAddNewButton" (click)="addNew()" class="create-new-button">
+    <button
+      *ngIf="showAddNewButton"
+      (click)="addNew()"
+      class="create-new-button"
+    >
       + Create New
     </button>
   </header>
@@ -23,8 +27,18 @@
     <ng-container *ngFor="let header of headers" [matColumnDef]="header">
       <th mat-header-cell *matHeaderCellDef>{{ header }}</th>
       <td mat-cell *matCellDef="let element">
-        <ng-container *ngIf="header === 'country' && isImageUrl(element[header]); else textTemplate">
-          <img [src]="element[header]" alt="Country Flag" width="22" height="22" />
+        <ng-container
+          *ngIf="
+            header === 'country' && isImageUrl(element[header]);
+            else textTemplate
+          "
+        >
+          <img
+            [src]="element[header]"
+            alt="Country Flag"
+            width="22"
+            height="22"
+          />
         </ng-container>
         <ng-template #textTemplate>{{ element[header] }}</ng-template>
       </td>
@@ -49,8 +63,8 @@
       class="custom-paginator"
       #paginator
       [pageSizeOptions]="[5, 10, 20]"
-      [showFirstLastButtons]="true">
+      [showFirstLastButtons]="true"
+    >
     </mat-paginator>
   </div>
 </div>
-

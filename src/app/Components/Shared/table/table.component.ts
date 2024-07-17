@@ -1,13 +1,22 @@
-import { Component, Input, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatPaginator, MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import {
+  MatPaginator,
+  MatPaginatorModule,
+  PageEvent,
+} from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { StylePaginatorDirective } from './custom-paginator-intl.service';
 
 @Component({
   selector: 'app-table',
@@ -19,17 +28,17 @@ import { StylePaginatorDirective } from './custom-paginator-intl.service';
     MatIconModule,
     MatButtonModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
   ],
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit, AfterViewInit {
-pageSize: unknown;
-pageLength: unknown;
-pageChangeEvent($event: PageEvent) {
-throw new Error('Method not implemented.');
-}
+  pageSize: unknown;
+  pageLength: unknown;
+  pageChangeEvent($event: PageEvent) {
+    throw new Error('Method not implemented.');
+  }
   @Input() headers: string[] = [];
   @Input() tableData: MatTableDataSource<any> = new MatTableDataSource<any>([]);
   @Input() showAddNewButton = false;

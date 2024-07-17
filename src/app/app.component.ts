@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-import { RulesComponent } from '../Rules Components/Rule Component/rules.component';
-import { SidebarComponent } from '../Sidebar Component/side-bar.component';
-import { HeaderComponent } from '../Header Component/header.component';
-import { TableComponent } from '../Shared/table/table.component';
+import { RulesComponent } from './Components/Rules Components/Rule Component/rules.component';
+import { SidebarComponent } from './Components/Sidebar Component/side-bar.component';
+import { HeaderComponent } from './Components/Header Component/header.component';
+import { TableComponent } from './Components/Shared/table/table.component';
 
 
 

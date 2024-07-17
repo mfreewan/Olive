@@ -2,7 +2,7 @@ import { Component, NgZone, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { MatTableDataSource } from '@angular/material/table';
 
-import rulesData from '../../../assets/Rules Data/rules.json';
+import rulesData from '../../../../assets/Rules Data/rules.json';
 import { TableComponent } from '../../Shared/table/table.component';
 
 export interface Rule {
@@ -38,13 +38,21 @@ export class RulesComponent implements OnInit {
 
     this.ruleData.data = mappedData;
 
-    this.ruleData.sortingDataAccessor = (data: Rule, sortHeaderId: string): string | number => {
+    this.ruleData.sortingDataAccessor = (
+      data: Rule,
+      sortHeaderId: string
+    ): string | number => {
       switch (sortHeaderId) {
-        case 'name': return data.Name;
-        case 'module': return data.Module;
-        case 'country': return data.country;
-        case 'status': return data.Status;
-        default: return '';
+        case 'name':
+          return data.Name;
+        case 'module':
+          return data.Module;
+        case 'country':
+          return data.country;
+        case 'status':
+          return data.Status;
+        default:
+          return '';
       }
     };
 

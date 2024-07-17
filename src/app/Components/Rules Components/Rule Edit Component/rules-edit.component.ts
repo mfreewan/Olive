@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TableComponent } from '../../Shared/table/table.component';
-import ruleDetails from '../../../assets/Rules Data/ruleDetails.json';
-import rulesData from '../../../assets/Rules Data/rules.json';
+import ruleDetails from '../../../../assets/Rules Data/ruleDetails.json';
+import rulesData from '../../../../assets/Rules Data/rules.json';
 import { NgFor } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
@@ -32,21 +32,26 @@ export class RuleEditComponent implements OnInit {
 
   ngOnInit() {
     const mappedData = ruleDetails.map((item) => ({
-      Name:item.name,
-      Validity:item.validity,
+      Name: item.name,
+      Validity: item.validity,
       Status: item.status,
-      
-      
     }));
 
     this.ruleDetail.data = mappedData;
 
-    this.ruleDetail.sortingDataAccessor = (data: RuleDetail, sortHeaderId: string): string | number => {
+    this.ruleDetail.sortingDataAccessor = (
+      data: RuleDetail,
+      sortHeaderId: string
+    ): string | number => {
       switch (sortHeaderId) {
-        case 'name': return data.Name;
-        case 'validity': return data.Validity;
-        case 'status': return data.Status;
-        default: return '';
+        case 'name':
+          return data.Name;
+        case 'validity':
+          return data.Validity;
+        case 'status':
+          return data.Status;
+        default:
+          return '';
       }
     };
 
