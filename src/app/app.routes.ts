@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { RulesComponent } from './Components/Rules Components/Rule Component/rules.component';
-import { RuleEditComponent } from './Components/Rules Components/Rule Edit Component/rules-edit.component';
+import { RulesComponent } from './components/rules/ruleEngine/rules.component';
+import { RuleEditComponent } from './components/rules/ruleEngineEdit/rules-edit.component';
 
 export const routes: Routes = [
     {path: '', component:RulesComponent},

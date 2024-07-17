@@ -3,7 +3,7 @@ import { NgFor } from '@angular/common';
 import { MatTableDataSource } from '@angular/material/table';
 
 import rulesData from '../../../../assets/Rules Data/rules.json';
-import { TableComponent } from '../../Shared/table/table.component';
+import { TableComponent } from '../../shared/table/table.component';
 
 export interface Rule {
   id: number;
