@@ -13,8 +13,8 @@ describe('HeaderComponent', () => {
   it('should create the component', () => {
     expect(component).toBeTruthy();
   });
-//   it('should render the header template', () => {
-//     const compiled = fixture.nativeElement;
-//     expect(compiled.querySelector('')).toBeTruthy();
-//   });
+  it('should render the header template', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('')).toBeTruthy();
+  });
 });

@@ -162,3 +162,8 @@ td img {
 ::ng-deep .mat-mdc-select-arrow {
   display: none;
 }
+
+
+:ng-deep .mat-mdc-paginator-range-actions{
+  width:80% !important;
+}
